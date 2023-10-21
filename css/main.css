@@ -124,7 +124,7 @@ h4::before {
 
 .navbar .navbar-brand {
   display: inline-block;
-  width: 120px;
+  width: 220px;
   margin-right: 100px;
 }
 
@@ -243,6 +243,7 @@ h4::before {
 
 .variations {
   padding: 100px 0px;
+  margin-bottom: 40px;
   border-top: 1px solid #cbcbcbb6;
   border-bottom: 1px solid #cbcbcbb6;
 }
@@ -690,7 +691,7 @@ footer .footer-wrap h6 {
 }
 
 footer .footer-wrap .about img {
-  width: 120px;
+  width: 220px;
 }
 
 footer .footer-wrap .social-media img {
@@ -809,8 +810,9 @@ footer .footer-wrap .newsletter #subscribe button {
     display: flex;
     gap: 30px;
   }
+
   footer .footer-wrap .about {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -871,7 +873,7 @@ footer .footer-wrap .newsletter #subscribe button {
 
 @media (min-width: 1200px) {
   .intro .intro-img {
-    width: 65%;
+    width: 75%;
   }
   .intro .intro-text {
     width: 35%;
@@ -880,16 +882,16 @@ footer .footer-wrap .newsletter #subscribe button {
     padding: 150px 0px;
   }
   .first-variation .text, .second-variation .text {
-    width: 45%;
+    width: 55%;
   }
   .first-variation .img, .second-variation .img {
-    width: 55%;
+    width: 65%;
   }
   .single-post .share a {
     width: 150px;
   }
   footer .footer-wrap .about {
-    width: 20%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

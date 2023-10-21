@@ -122,7 +122,9 @@
 <body>
   <nav class="navbar navbar-expand-xl fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/"><img class="w-500" src="img/jc.png" alt=""></a>
+      <a class="navbar-brand" href="/">
+        <img class="w-500" src="img/jc.png" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -133,22 +135,19 @@
             <a class="nav-link  active" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://school.joyculture.xyz" title="Joy School" target="_blank">About Us</a>
+            <a class="nav-link" href="/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://meetings.joyculture.xyz" title="Joy School" target="_blank">Our
-              Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="https://meetings.joyculture.xyz" title="Joy School" target="_blank">Get
-              Involved</a>
+            <a class="nav-link" href="/services">Our Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://blog.joyculture.xyz" title="Joy School" target="_blank">Blog</a>
+            <a class="nav-link" href="https://meetings.joyculture.xyz">Get Involved</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://blog.joyculture.xyz" title="Joy School" target="_blank">Contact</a>
+            <a class="nav-link" href="https://blog.joyculture.xyz">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -156,7 +155,6 @@
   </nav>
   <style>
     .btn-get-started {
-      font-family: var(--font-primary);
       font-weight: 600;
       font-size: 17px;
       letter-spacing: 1px;
@@ -196,10 +194,11 @@
           <img src="/img/hero_image.jpg" alt="Joy Culture">
         </div>
       </div>
+
       <div id="variations" class="variations">
         <div class="first-variation">
           <div class="img">
-            <img src="/img/school.avif" alt="">
+            <img src="img/first-variant.jpeg" alt="">
           </div>
           <div class="text">
             <h1 class="variations-h1">Welcome to Transcendental Performance: Your Path to Super-Success!</h1>
@@ -213,40 +212,101 @@
             </div>
           </div>
         </div>
+        <div style="border: 1px solid #cbcbcbb6; margin-top: 20px; margin-bottom: 40px;"></div>
+        <style>
+          .variations-why::before {
+            content: '';
+            width: 48%;
+            height: 10px;
+            background-color: #FBB302;
+            position: absolute;
+            top: 0.75em;
+            right: -5px;
+            bottom: 10.2em;
+            z-index: -1;
+          }
+
+          .why_section .text {}
+
+          .why_section .text ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+
+          .text ul li {
+            padding: 5px 15px 5px 15px;
+            font-size: 20px;
+            min-width: 300px;
+            width: 400px;
+            text-align: start;
+          }
+
+          .text ul li span {
+            font-weight: bolder;
+            font-size: 23px;
+          }
+        </style>
+
+        <div class="container why_section mb-5">
+          <div class="text">
+            <h1 class="variations-why text-center">Why This Coaching Experience is a Game Changer</h1>
+            <ul class="row">
+              <li class="col-sm">
+                <span>🌟 Emotional Intelligence: </span>
+                Learn to harness your emotions as a source of strength and insight. Emotional intelligence is the key to
+                understanding yourself and connecting with others on a deeper level.
+              </li>
+              <li class="col-sm">
+                <span>🌟 Neuroscience:</span>
+                Gain insight into how your brain works and leverage this knowledge to optimize your decision-making,
+                productivity, and overall well-being.
+              </li>
+              <li class="col-sm">
+                <span>🌟 Mindset Engineering:</span>
+                Develop a resilient and growth-oriented mindset. Your thoughts and beliefs are the foundation of your
+                success.
+              </li>
+              <li class="col-sm">
+                <span>🌟 Exercise Therapy:</span>
+                Discover the powerful connection between physical fitness and mental well-being. Unlock boundless energy
+                and vitality to fuel your journey.
+              </li>
+              <li class="col-sm">
+                <span>🌟 Positive Psychology:</span>
+                Find happiness, meaning, and fulfillment in every aspect of your life. Positive psychology techniques
+                will transform your approach to challenges and setbacks.
+              </li>
+              <li class="col-sm">
+                <span>🌟 Occupational Therapy Performance Model:</span>
+                Align your professional goals with your personal values. Achieve your career aspirations while
+                maintaining a balanced and meaningful life.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="border: 1px solid #cbcbcbb6; margin-top: 20px; margin-bottom: 40px;"></div>
+        <div class="first-variation">
+          <div class="img">
+            <img src="img/join-cohort.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h1 class="variations-h1">Join this Cohort and Secure Your Future Success!</h1>
+            <p class="front-page" style="font-weight: 700; font-size: 23px;"><span style="font-weight: bolder;">Don't
+                miss this opportunity to be part of the inaugural cohort of our Transcendental Performance Coaching
+                Experience. We're offering an exclusive *60% discount* for early sign-ups, but hurry, as seats are
+                limited!</span><br>
+              Your future success is just one decision away. Join us in this transformative journey and become the
+              super-successful you that 2024 demands. Embrace the new paradigm, and let's transcend together!
+            </p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a href="#about" class="btn-get-started">Join Cohort</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Service -->
-    <div class="service">
-      <h1 class="intro-h2">Our Service</h1>
-      <p class="front-page py-4" style="min-width: 80%; font-weight: 600; font-size: 25px;">Explore our comprehensive
-        services to unlock
-        your full potential and achieve your goals. With proven strategies and tools, we'll help you succeed in any area
-        of life or career.</p>
-      <div class="service-items p-6">
-        <div class="item">
-          <img src="img/icon/code-icon.svg" alt="">
-          <span class="name">Complementary Resources</span>
-        </div>
-        <div class="item">
-          <img src="img/icon/satisfied-client-icon.svg" alt="">
-          <span class="name">Courses & Masterclasses</span>
-        </div>
 
-        <div class="item">
-          <img src="img/icon/realized-projects-icon.svg" alt="">
-          <span class="name">Corporate Coaching</span>
-        </div>
-
-        <div class="item">
-          <img src="img/icon/realized-projects-icon.svg" alt="">
-          <span class="name">Personalized Coaching</span>
-        </div>
-        <div class="item">
-          <img src="img/icon/realized-projects-icon.svg" alt="">
-          <span class="name">Holistic Wellness Evaluation</span>
-        </div>
-      </div>
-    </div>
     <!-- Newsletter -->
     <div class="update-news">
       <div class="row">
@@ -263,13 +323,65 @@
     </div>
   </main>
   <!-- Footer -->
+
+  <style>
+    .footer .footer-links {
+      margin-bottom: 30px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links ul i {
+      padding-right: 2px;
+      color: rgba(0, 131, 116, 0.8);
+      font-size: 12px;
+      line-height: 0;
+    }
+
+    .footer-links ul li {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-links ul li:first-child {
+      padding-top: 0;
+    }
+
+    .footer-links ul a {
+      color: #000;
+      transition: 0.3s;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .footer-links ul a:hover {
+      color: #FBB302;
+      -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+    }
+
+    .footer-contact p {
+      line-height: 26px;
+    }
+
+    .footer-contact p a:hover {
+      color: #FBB302;
+      -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+    }
+  </style>
   <footer>
-    <div class="container text-center text-md-start py-5">
+    <div class="container text-sm-center text-md-start py-5">
       <div class="footer-wrap">
-        <div class="about">
-          <img src="/img/jc.png" alt="">
-          <p class="text-muted py-4">
-            Unlocking Human Flourishing & Peak Performance through Emotional Intelligence and JOY!
+        <div class="col about mb-5">
+          <img src="/img/jc.png" alt="Joy Culture">
+          <p style="color: #000; font-weight: 600; font-size: 18px;">
+            Transcendental Performance: Shaping Success from Within
           </p>
           <div class="social-media">
             <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-01.svg" alt=""></a>
@@ -279,24 +391,32 @@
                 src="./img/icon/social-media-04.svg" alt=""></a>
           </div>
         </div>
-
-        <div class="company">
-          <h6 class="fw-bold">Services</h6>
-          <p><a href="">Complementary Resources</a></p>
-          <p><a href="">Courses & Masterclasses</a></p>
-          <p><a href="">Corporate Coaching</a></p>
-          <p><a href="">Personalized Coaching</a></p>
-          <p><a href="">Holistic Wellness Evaluation</a></p>
+        <div class="col-lg-2 col-md-3 footer-links text-sm-start text-md-start mb-3">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Complementary Resources</a></li>
+            <li><a href="#">Courses & Masterclasses</a></li>
+            <li><a href="#">Corporate Coaching</a></li>
+            <li><a href="#">Personalized Coaching</a></li>
+            <li><a href="#">Holistic Wellness Evaluation</a></li>
+          </ul>
         </div>
-        <div class="newsletter">
-          <h6 class="fw-bold">Newsletter</h6>
-          <p class="text-muted">Sign up and receive the latest tips
-            via email.</p>
-          <form id="subscribe" action="">
-            <label for="email">Your e-mail:</label>
-            <input type="email" placeholder="e-mail:" name="email" required>
-            <button type="submit" class="btn-fill">Subscribe</button>
-          </form>
+        <div class="col-lg-3 col-md-9 footer-links text-sm-start text-md-start mb-3">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">JoyedUp</a></li>
+            <li><a href="#">Joy School</a></li>
+            <li><a href="#">Joy Meetings</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-contact text-sm-start text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Lagos State<br>
+            Nigeria<br><br>
+            <strong>Phone:</strong> <a href="tel:+234">+234 8</a><br>
+            <strong>Email:</strong> <a href="mailto:info@joyculture.xyz">info@joyculture.xyz</a><br>
+          </p>
         </div>
       </div>
       <div class="copyright">
