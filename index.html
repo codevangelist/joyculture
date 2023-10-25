@@ -114,7 +114,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
@@ -208,7 +208,8 @@
               of yourself—the version that super-success demands.
             </p>
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <button class="btn btn-get-started" data-toggle="modal" data-target="#signupFormModal">Get Started</button>
+              <button class="btn btn-get-started" data-toggle="modal" data-target="#signupFormModal">Get
+                Started</button>
             </div>
           </div>
         </div>
@@ -305,9 +306,54 @@
           </div>
         </div>
         <div style="border: 1px solid #cbcbcbb6; margin-top: 20px; margin-bottom: 40px;"></div>
+        <style>
+          .variations-services::before {
+            content: '';
+            width: 38%;
+            height: 10px;
+            background-color: #FBB302;
+            position: absolute;
+            top: 0.75em;
+            bottom: 10.2em;
+            z-index: -1;
+          }
+        </style>
         <div class="container">
           <div class="text">
-            <h1 class="variations-h1 text-center">Our Services</h1>
+            <h1 class="variations-services text-center">Our Services</h1>
+          </div>
+        </div>
+        <div style="border: 1px solid #cbcbcbb6; margin-top: 20px; margin-bottom: 40px;"></div>
+
+        <style>
+          .btn-sign-up {
+            font-weight: 600;
+            font-size: 17px;
+            width: 200px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 14px 40px;
+            border-radius: 5px;
+            transition: 0.3s;
+            color: #FFF;
+            background: #fb0202;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+            border: 2px solid #fb0202;
+          }
+
+          .btn-sign-up:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            color: #fb0202;
+            background-color: #fff;
+            border: 2px solid #fb0202;
+          }
+        </style>
+        <div class="container">
+          <div class="text">
+            <h1 class="text-center">Sign Up Now and Transform Your 2024!</h1>
+            <div class="d-flex justify-content-center justify-content-lg-center">
+              <a href="/getstarted/" class="btn-sign-up text-center">Sign Up</a>
+            </div>
           </div>
         </div>
       </div>
@@ -328,137 +374,6 @@
     </div>
     </div>
   </main>
-
-  <div class="modal fade" id="signupFormModal" tabindex="-1" role="dialog" aria-labelledby="signupFormModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="signupFormModalLabel">90-Day Holistic Virtual Coaching Program Sign-Up Form</h2>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="#" method="POST">
-              <h3>Personal Information</h3>
-              <div class="form-group">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="phone-number">Phone Number:</label>
-                <input type="tel" id="phone-number" name="phone-number" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" class="form-control" required>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="occupation">Occupation:</label>
-                <input type="text" id="occupation" name="occupation" class="form-control">
-              </div>
-
-              <h3>Address</h3>
-              <div class="form-group">
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="state">State/Province:</label>
-                <input type="text" id="state" name="state" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="zip-code">ZIP/Postal Code:</label>
-                <input type="text" id="zip-code" name="zip-code" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country" class="form" required>
-              </div>
-
-              <h3>Program Selection</h3>
-              <div class="form-group">
-                <label for="start-date">Program Start Date:</label>
-                <input type="date" id="start-date" name="start-date" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="program-fee">Program Fee:</label>
-                <input type="text" id="program-fee" name="program-fee" class="form-control" required>
-              </div>
-
-              <h3>Coaching Preferences</h3>
-              <div class="form-group">
-                <label for="preferred-coach">Preferred Coach (if applicable):</label>
-                <input type="text" id="preferred-coach" name="preferred-coach" class="form-control">
-              </div>
-
-              <div class="form-group">
-                <label for="contact-method">Preferred Contact Method (Phone/Email):</label>
-                <select id="contact-method" name="contact-method" class="form-control required" required>
-                  <option value="phone"> Phone</option>
-                  <option value="email">Email</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="hear-about">How did you hear about our coaching program?</label>
-                <select id="hear-about" name="hear-about" class="form-control" required>
-                  <option value="referral">Referral</option>
-                  <option value="social-media">Social Media</option>
-                  <option value="website">Website</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="other-source">Please specify:</label>
-                <input type="text" id="other-source" name="other-source" class="form-control">
-              </div>
-
-              <h3>Terms and Conditions</h3>
-              <p>By signing up for the 90-Day Holistic Virtual Coaching Program, you agree to our program terms and
-                conditions.</p>
-
-              <h3>Electronic Signature</h3>
-              <div class="form-group">
-                <label for="electronic-signature">Full Name (as an electronic signature):</label>
-                <input type="text" id="electronic-signature" name="electronic-signature" class="form-control" required>
-              </div>
-
-              <div class="text-center">
-                <small>Once you submit this form, you will receive a confirmation email with program details, including
-                  your start date and the schedule. Please review this information carefully.</small><br>
-                <small>By submitting this form, you agree to our program's terms and conditions and payment
-                  policies.</small><br>
-                <small>If you have any questions or need assistance, please contact us at [Contact Email or Phone
-                  Number].</small>
-              </div>
-
-              <br>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Make Payment</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   <!-- Footer -->
 
   <style>
