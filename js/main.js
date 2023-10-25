@@ -20,6 +20,7 @@ $(function(){
     $('.forward').click(function(){
     	$("#wizard").steps('next');
     })
+    // 
     $('.backward').click(function(){
         $("#wizard").steps('previous');
     })
