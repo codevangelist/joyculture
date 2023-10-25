@@ -6,7 +6,7 @@ $(function(){
         enableAllSteps: true,
         transitionEffectSpeed: 500,
         labels: {
-            finish: "Submit",
+            finish: "Make Payment",
             next: "Forward",
             previous: "Backward"
         }
